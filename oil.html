@@ -1,0 +1,789 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/tailwind.css" />
+  <link rel="stylesheet" href="assets/css/style.min.css" />
+  <link rel="stylesheet" href="assets/css/style-responsive.css">
+  <script src="https://kit.fontawesome.com/e8c1c6e963.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" defer />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <link rel="stylesheet" href="assets/css/verticals.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <style>
+      /* Ensure proper stacking context */
+      /* Mobile menu button spacing */
+      .group:focus .group-focus\:visible { display: block; }
+      .service-card { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+      .service-card:hover { box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3); }
+      .service-card:hover { animation: pulse-glow 2s infinite; }
+      .service-card:hover { box-shadow: 0 0 25px rgba(59, 130, 246, 0.5); }
+      @keyframes pulse-glow { 0% { box-shadow: 0 0 10px rgba(59, 130, 246, 0.3); } 50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); } 100% { box-shadow: 0 0 10px rgba(59, 130, 246, 0.3); } }
+      @keyframes blob { 0% { transform: translate(0px, 0px) scale(1); } 33% { transform: translate(30px, -50px) scale(1.1); } 66% { transform: translate(-20px, 20px) scale(0.9); } 100% { transform: translate(0px, 0px) scale(1); } }
+      .animate-blob { animation: blob 7s infinite; }
+      .animation-delay-2000 { animation-delay: 2s; }
+      @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+      .animate-marquee { animation: marquee 20s linear infinite; }
+      @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); } 100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); } }
+      .glow-button { animation: pulse 2s infinite; }
+      @keyframes grid-move { 0% { background-position: 0 0; } 100% { background-position: 40px 40px; } }
+      .animate-grid-move { animation: grid-move 20s linear infinite; }
+      @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+      .animate-float { animation: float 8s ease-in-out infinite; }
+      @keyframes pulse-opacity { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; } }
+      .animate-pulse { animation: pulse-opacity 2s infinite; }
+      .hover-glow:hover { box-shadow: 0 0 15px rgba(59, 130, 246, 0.5); transform: translateY(-2px); }
+      .backdrop-blur-lg { backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #111827; }
+      ::-webkit-scrollbar-thumb { background: #3B82F6; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #2563EB; }
+      [x-cloak] { display: none !important; }
+  </style>
+  <title>Oil</title>
+</head>
+<body class="appear-animate bg-black text-gray-100 font-sans antialiased">
+
+    <div class="page-loader">
+        <div class="loader">
+            <img loading="lazy" src="assets/images/loader.gif" alt="Logo" height="750" width="750" />
+        </div>
+    </div>
+    <div class="page" id="top">
+        <nav class="navbar navbar-expand-lg dark stick-fixed">
+            <div class="container-fluid px-4">
+                <!-- Logo -->
+                <div class="nav-logo-wrap mt-2">
+                    <a class="navbar-brand" href="/">
+                        <img loading="lazy" src="assets/images/logo.png" alt="Logo" width="150">
+                    </a>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler d-lg-none">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <!-- Main Navigation -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav text-gray-300">
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="#" data-menu="who-we-are">Who we are</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="#" data-menu="what-we-do">What we do</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="#" data-menu="resources">Resources</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                             <a class="nav-link" href="careers.html" data-menu="careers">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Contact Button -->
+                <button type="submit" class="btn-submit mt-2 btn d-none d-lg-block"
+                        onclick="window.location.href='contactus.html';">
+                    <span class="btn-text">Contact Us</span>
+                    <div class="circle-background"></div>
+                    <div class="arrow-circle">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"></path>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </nav>
+        <!-- What We Do Mega Menu -->
+        <div class="mega-menu" id="what-we-do-menu">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="mega-menu-title">What We Do</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Industries</h4>
+                        <ul class="list-unstyled mega-list">
+                            <li><a class="text-black" href="gas-power.html">Oil, Gas & Power</a></li>
+                            <li>
+                                <a class="text-black" href="banking.html">
+                                    Banking, Financial Services &
+                                    Insurance
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="homeland-security.html">
+                                    Homeland Security &
+                                    Defense
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="transport-logistics.html">
+                                    Transport &
+                                    Logistics
+                                </a>
+                            </li>
+                            <li><a class="text-black" href="" ">Telecom</a></li>
+                            <li><a class=" text-black" href="healthcare.html">Healthcare</a></li>
+                            <li><a class="text-black" href="agriculture.html">Agriculture</a></li>
+                            <li><a class="text-black" href="education.html">Education</a></li>
+                            <li>
+                                <a class="text-black" href="critical-it.html">Critical IT & Urban Infrastructure</a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="solid-waste.html">
+                                    Solid Waste
+                                    Management
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="capacity-building.html">
+                                    Capacity Building & Skill
+                                    Development
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Expertise</h4>
+                        <ul class="list-unstyled mega-list">
+                            <li>
+                                <a class="text-black" href="digital-transformation.html">
+                                    Digital
+                                    Transformation
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="software-development.html">
+                                    Software
+                                    Development
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="ai-ml.html">
+                                    AI/ML & Data Analytics
+                                    Services
+                                </a>
+                            </li>
+                            <li><a class="text-black" href="rpa.html">Robotic Process Automation</a></li>
+                            <li><a class="text-black" href="blockchain.html">Blockchain</a></li>
+                            <li>
+                                <a class="text-black" href="gis.html">Geographic Information System ( GIS )</a>
+                            </li>
+                            <li><a class="text-black" href="cybersecurity.html">Cybersecurity</a></li>
+                            <li><a class="text-black" href="cloud.html">Cloud</a></li>
+                            <li><a class="text-black" href="it-consultancy.html">IT Consultancy</a></li>
+                            <li>
+                                <a class="text-black" href="data-center.html">Data Center Services</a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="disaster-emergency.html">
+                                    Disaster/Emergency
+                                    Services
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Products</h4>
+                        <ul class="list-unstyled mega-list">
+                            <li>
+                                <a class="text-black" href="ida.html">
+                                    Intelligent Debriefing with
+                                    Analytics(IDA)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="smart-landslide.html">Smart Landslide Early Warning System</a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="gis-tracking.html">
+                                    GIS-based Workforce & Fleet
+                                    Tracking System
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="project-process.html">Project Process Management System</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Resources Mega Menu -->
+        <div class="mega-menu" id="resources-menu">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="mega-menu-title">Resources</h5>
+                        <ul class="list-unstyled mega-list">
+                            <li><a class="text-black" href="blog.html">Blogs</a></li>
+                            <li><a class="text-black" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="text-black" href="newsandevents.html">News & Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Who We Are Mega Menu -->
+        <div class="mega-menu" id="who-we-are-menu">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="mega-menu-title">Who We Are</h5>
+                        <ul class="list-unstyled mega-list">
+                            <li><a class="text-black" href="aboutscs.html">About SCS Tech</a></li>
+                            <li><a class="text-black" href="lifeatscs.html">Life at SCS Tech</a></li>
+                            <li>
+                                <a class="text-black" href="awardsandrecognisations.html">
+                                    Awards &
+                                    Recognition
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navigation panel -->
+        <div id="mobile-nav-container">
+            <div class="mobile-nav-header">
+                <a href="/">
+                    <img loading="lazy" src="assets/images/logo.png" alt="Logo" width="110">
+                </a>
+                <button class="mobile-close-btn">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+
+
+            <!-- Main Mobile Menu -->
+            <div id="mobile-main-menu" class="mobile-submenu active">
+                <ul class="mobile-menu-list">
+                    <li>
+                        <a href="#" class="mobile-menu-link" data-target="mobile-who-we-are">
+                            Who we are
+                            <span class="mobile-menu-arrow"><i class="fa fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="mobile-menu-link" data-target="mobile-what-we-do">
+                            What we do
+                            <span class="mobile-menu-arrow"><i class="fa fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="mobile-menu-link" data-target="mobile-resources">
+                            Resources
+                            <span class="mobile-menu-arrow"><i class="fa fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="career">Careers</a>
+                    </li>
+                    <li>
+                        <a href="contact-us">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Who We Are Submenu -->
+            <div id="mobile-who-we-are" class="mobile-submenu" data-parent="mobile-main-menu">
+                <div class="mobile-submenu-header">
+                    <button class="mobile-back-btn">
+                        <i class="fa fa-chevron-left"></i> Back
+                    </button>
+                    <h3>Who We Are</h3>
+                </div>
+                <ul class="mobile-menu-list">
+                    <li class="nav-item mt-2">
+                        <a class="nav-link" href="#" data-menu="who-we-are">Who we are</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a class="nav-link" href="#" data-menu="what-we-do">What we do</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a class="nav-link" href="#" data-menu="resources">Resources</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                         <a class="nav-link" href="careers.html" data-menu="careers">Careers</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- What We Do Submenu -->
+            <div id="mobile-what-we-do" class="mobile-submenu" data-parent="mobile-main-menu">
+                <div class="mobile-submenu-header">
+                    <button class="mobile-back-btn">
+                        <i class="fa fa-chevron-left"></i> Back
+                    </button>
+                    <h3>What We Do</h3>
+                </div>
+
+                <div class="mobile-submenu-section">
+                    <h4>Industries</h4>
+                    <ul class="mobile-menu-list">
+                        <li><a class="text-black" href="gas-power.html">Oil, Gas & Power</a></li>
+                        <li>
+                            <a class="text-black" href="banking.html">
+                                Banking, Financial Services &
+                                Insurance
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-black" href="homeland-security.html">
+                                Homeland Security &
+                                Defense
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-black" href="transport-logistics.html">
+                                Transport &
+                                Logistics
+                            </a>
+                        </li>
+                        <li><a class="text-black" href="" ">Telecom</a></li>
+                        <li><a class=" text-black" href="healthcare.html">Healthcare</a></li>
+                        <li><a class="text-black" href="agriculture.html">Agriculture</a></li>
+                        <li><a class="text-black" href="education.html">Education</a></li>
+                        <li>
+                            <a class="text-black" href="critical-it.html">Critical IT & Urban Infrastructure</a>
+                        </li>
+                        <li>
+                            <a class="text-black" href="solid-waste.html">
+                                Solid Waste
+                                Management
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-black" href="capacity-building.html">
+                                Capacity Building & Skill
+                                Development
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-submenu-section">
+                    <h4>Expertise</h4>
+                    <ul class="mobile-menu-list">
+                        <li>
+                            <a href="digital-transformation.html">
+                                Digital
+                                Transformation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="software-development.html">
+                                Software
+                                Development
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ai-ml.html">
+                                AI/ML & Data Analytics
+                                Services
+                            </a>
+                        </li>
+                        <li><a href="rpa.html">Robotic Process Automation</a></li>
+                        <li><a href="blockchain.html">Blockchain</a></li>
+                        <li>
+                            <a href="gis.html">Geographic Information System ( GIS )</a>
+                        </li>
+                        <li><a href="cybersecurity.html">Cybersecurity</a></li>
+                        <li><a href="cloud.html">Cloud</a></li>
+                        <li><a href="it-consultancy.html">IT Consultancy</a></li>
+                        <li>
+                            <a href="data-center.html">Data Center Services</a>
+                        </li>
+                        <li>
+                            <a href="disaster-emergency.html">
+                                Disaster/Emergency
+                                Services
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-submenu-section">
+                    <h4>Products</h4>
+                    <ul class="mobile-menu-list">
+                        <li>
+                            <a href="ida.html">
+                                Intelligent Debriefing with
+                                Analytics(IDA)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="smart-landslide.html">Smart Landslide Early Warning System</a>
+                        </li>
+                        <li>
+                            <a href="gis-tracking.html">
+                                GIS-based Workforce & Fleet
+                                Tracking System
+                            </a>
+                        </li>
+                        <li>
+                            <a href="project-process.html">Project Process Management System</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Resources Submenu -->
+            <div id="mobile-resources" class="mobile-submenu" data-parent="mobile-main-menu">
+                <div class="mobile-submenu-header">
+                    <button class="mobile-back-btn">
+                        <i class="fa fa-chevron-left"></i> Back
+                    </button>
+                    <h3>Resources</h3>
+                </div>
+                <ul class="mobile-menu-list">
+                    <li><a class="text-black" href="blog.html">Blogs</a></li>
+                    <li><a class="text-black" href="case-studies.html">Case Studies</a></li>
+                    <li><a class="text-black" href="newsandevents.html">News & Events</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <style>
+
+            /* Banner Styles */
+            .inner-banner {
+                background-image: url('../../assets/images/banners/Digital Transformation.png');
+                color: white;
+                padding: 80px 20px;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .banner-content {
+                max-width: 800px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 2;
+            }
+
+            .banner-title {
+                font-size: 2.5rem;
+                margin-bottom: 15px;
+                font-weight: 700;
+            }
+
+            .banner-subtitle {
+                font-size: 1.5rem;
+                margin-bottom: 25px;
+                opacity: 0.9;
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .banner-breadcrumb {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+                .banner-breadcrumb a {
+                    color: white;
+                    text-decoration: none;
+                    opacity: 0.8;
+                    transition: opacity 0.3s;
+                }
+
+                    .banner-breadcrumb a:hover {
+                        opacity: 1;
+                        text-decoration: underline;
+                    }
+
+                .banner-breadcrumb .separator {
+                    opacity: 0.6;
+                }
+
+            /* Decorative elements */
+            .banner-circle {
+                position: absolute;
+                border-radius: 50%;
+                background: rgba(255,255,255,0.1);
+            }
+
+            .circle-1 {
+                width: 200px;
+                height: 200px;
+                top: -50px;
+                left: -50px;
+            }
+
+            .circle-2 {
+                width: 150px;
+                height: 150px;
+                bottom: -30px;
+                right: 50px;
+            }
+
+            /* Responsive adjustments */
+            @@media (max-width: 768px) {
+                .inner-banner {
+                    padding: 100px 15px;
+                }
+
+                .banner-title {
+                    font-size: 3rem;
+                }
+
+                .banner-subtitle {
+                    font-size: 2.5rem;
+                }
+            }
+
+            .banner-button {
+                display: inline-block;
+                background: white;
+                color: #6e8efb;
+                padding: 12px 30px;
+                border-radius: 30px;
+                text-decoration: none;
+                font-weight: 600;
+                margin-top: 15px;
+            }
+        </style>
+
+        <div class="inner-banner">
+            <!-- Decorative circles -->
+            <div class="banner-circle circle-1"></div>
+            <div class="banner-circle circle-2"></div>
+
+            <div class="banner-content">
+                <h1 class="banner-title">Digital Transformation</h1>
+                <p class="banner-subtitle">
+                    Digital transformation isn’t just a service—it’s our expertise, honed over a decades of driving
+                    technology-led evolution for businesses worldwide.
+                </p>
+
+                <div class="banner-breadcrumb">
+                    <a href="/">Home</a>
+                    <span class="separator">/</span>
+                    <a href="/services">What we do</a>
+                    <span class="separator">/</span>
+                    <span>Oil, Gas & Power</span>
+                </div>
+            </div>
+        </div>
+        <section class="small-section  pb-10">
+            <div class="row">
+                <div class="col-md-5">
+                    <img loading="lazy"
+                         src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1746951996/engineer-working-nuclear-power-plant.png"
+                         alt="oil-and-gas" class="sector-left-image">
+                </div>
+                <div class="col-md-7">
+                    <h1 class="middle-red-h1">
+                        Conquer complexity. Harness innovation. Transform the energy equation.
+                    </h1>
+                    <p class="sector-para text-end">
+                        The energy sector is at an inflection point—challenged by global volatility, rising demands, and
+                        the urgent push for sustainability. Traditional operating models are giving way to intelligent,
+                        adaptive systems that can drive efficiency, transparency, and innovation across the board.<br />
+                        At SCS Tech, we don’t just keep pace with the energy sector’s digital transformation—we
+                        drive it. By harnessing the power of AI/ML, IoT, GIS, Cloud, and Network & Data Analytics,
+                        we help oil, gas, and power enterprises reimagine how they operate—from exploration and
+                        production to transmission, distribution, and beyond. Our end-to-end digital solutions
+                        increase uptime, enhance safety, streamline compliance, and unlock hidden value across the
+                        energy value chain. We break down silos, modernize outdated systems, and build intelligent
+                        digital cores that power faster decisions and seamless operations.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="small-section  pb-10">
+
+            <div class="container1">
+                <h1 class="middle-text-sector">
+                    Shaping the future of energy with our services—smarter, safer, and more sustainable.
+                </h1>
+            </div>
+            <!-- <div class="horizontal-line-sector top"></div> -->
+            <div class="container-sector">
+                <div class="section-sector">
+                    <h2>Real-Time Operational Intelligence</h2>
+                    <p>
+                        We use AI, IoT, and digital twins to monitor equipment in real-time, predict failures, and
+                        forecast load—helping reduce downtime and improve plant, pipeline, and grid efficiency.
+                    </p>
+                </div>
+
+                <div class="section-sector">
+                    <h2>Unified System Integration</h2>
+                    <p class="mt-5">
+                        We connect all the legacy systems into one seamless platform—enabling faster
+                        decisions, smoother workflows, and full operational visibility.
+                    </p>
+                </div>
+
+                <div class="section-sector">
+                    <h2>Smart Field Enablement</h2>
+                    <p class="mt-5">
+                        We digitize fieldwork with mobile apps, GIS mapping services, and real-time data
+                        access—boosting safety, coordination, and response times, even in remote locations.
+                    </p>
+                </div>
+
+                <div class="section-sector">
+                    <h2>Intelligent Grid & Asset Optimization</h2>
+                    <p>
+                        We improve grid and asset performance with AI analytics, smart grid systems, and remote
+                        monitoring—reducing energy losses and extending asset life.
+                    </p>
+                </div>
+
+                <!-- Vertical dividers -->
+                <div class="vertical-divider-sector"></div>
+                <div class="vertical-divider-sector"></div>
+                <div class="vertical-divider-sector"></div>
+                <div class="vertical-divider-sector"></div>
+
+
+            </div>
+            <!-- <div class="horizontal-line-sector bottom"></div> -->
+        </section>
+
+        <section class="small-section  pb-10">
+            <div class="relative text-start">
+                <h1 class="expertise1-middle-heading">
+                    Featured Insights
+                </h1>
+            </div>
+            <div class="m-5">
+                <div class="row project-row align-items-center">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="project-card">
+                            <div class="arrow-circle1">
+                                <a href='https://blog.scstechindia.com/implication-of-gis-technology-in-the-oil-and-gas-sector-scs-tech-india/'
+                                   target="_blank">
+
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <h2 class="project-title">How GIS Mapping Services is Transforming the Oil/Gas Sector? </h2>
+                            <p class="project-desc">
+                                GIS plays an important role in streamlining operations and saving
+                                costs in the oil and gas sector, we will discuss......a GPS and GIS-enabled tracking
+                                system.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <img loading="lazy"
+                             src="https://blog.scstechindia.com/wp-content/uploads/2024/09/247422-820x453.webp"
+                             alt="Waste Management" class="project-image">
+                    </div>
+                </div>
+
+                <!-- Second Project Row -->
+                <div class="row project-row align-items-center">
+                    <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                        <img loading="lazy"
+                             src="https://blog.scstechindia.com/wp-content/uploads/2025/03/portrait-engineers-work-hours-job-site-1-820x509.webp"
+                             alt="Power Management" class="project-image">
+                    </div>
+                    <div class="col-lg-7 col-md-6 order-md-2 order-1">
+                        <div class="project-card">
+                            <div class="arrow-circle1">
+                                <a href="https://blog.scstechindia.com/how-can-digital-oilfields-reduce-downtime-with-oil-and-gas-technology-solutions/"
+                                   target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <h2 class="project-title">
+                                How Can Digital Oilfields Reduce Downtime with Oil and Gas
+                                Technology Solutions?
+                            </h2>
+                            <p class="project-desc">
+                                Digital Oilfields solutions implement Industrial IoT (IIoT) for Oil
+                                & Gas, real-time analysis, and automation to streamline operations.....
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="small-section  pb-10">
+        </section>
+
+
+    </div>
+    <footer class="footer">
+        <div class="row mr-1">
+            <div class="col-md-2 mb-2 mb-md-0">
+                <div class="footer-text">© 2025 SCS Tech</div>
+            </div>
+            <div class="col-md-8 mb-2 mb-md-0">
+                <div class="footer-text">
+                    <span class="space">Disclaimer</span>
+                    <span>Privacy Policy</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="d-flex justify-content-start gap-3 social-icons">
+                    <a href="https://www.linkedin.com/company/scstechindia-pvt-ltd/?viewAsMember=true"
+                       title="LinkedIn+" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/scstech_india" title="Twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/scs.techindia/" title="Instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/scstechindiapvtltd" title="Facebook" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/adminscstech" title="YouTube" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.viewport.mini.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="assets/js/all.js"></script>
+    <script type="text/javascript" src="assets/js/blog.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+    <script src="https://kit.fontawesome.com/e8c1c6e963.js" crossorigin="anonymous"></script>
+</body>
+</html> 

@@ -1,0 +1,1406 @@
+<!doctype html>
+<html>
+<head>
+    <title>SCS Tech India PVT Ltd.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="stylesheet" href="assets/css/style-responsive.css">
+
+    <script src="https://kit.fontawesome.com/e8c1c6e963.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" />
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/verticals.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <style>
+        /* Ensure proper stacking context */
+        /* Mobile menu button spacing */
+        .group:focus .group-focus\:visible {
+            display: block;
+        }
+
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+            .service-card:hover {
+                box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
+            }
+
+            .service-card:hover {
+                animation: pulse-glow 2s infinite;
+            }
+
+            .service-card:hover {
+                box-shadow: 0 0 25px rgba(59, 130, 246, 0.5);
+            }
+
+        @keyframes pulse-glow {
+            0% {
+                box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+            }
+
+            100% {
+                box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+            }
+        }
+
+        @keyframes blob {
+            0% {
+                transform: translate(0px, 0px) scale(1);
+            }
+
+            33% {
+                transform: translate(30px, -50px) scale(1.1);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) scale(0.9);
+            }
+
+            100% {
+                transform: translate(0px, 0px) scale(1);
+            }
+        }
+
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-marquee {
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+            }
+        }
+
+        .glow-button {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes grid-move {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 40px 40px;
+            }
+        }
+
+        .animate-grid-move {
+            animation: grid-move 20s linear infinite;
+        }
+
+        @keyframes float {
+
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .animate-float {
+            animation: float 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse-opacity {
+
+            0%, 100% {
+                opacity: 0.6;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .animate-pulse {
+            animation: pulse-opacity 2s infinite;
+        }
+
+        .hover-glow:hover {
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .backdrop-blur-lg {
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #111827;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #3B82F6;
+            border-radius: 4px;
+        }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #2563EB;
+            }
+
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
+    <!-- Global site tag (gtag.~/js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215637589-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K6N9WEW7B0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-K6N9WEW7B0', {
+            'linker': {
+                'domains': ['blog.scstechindia.com']
+            }
+        });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215637589-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-215637589-1");
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "SCS Tech India Pvt. Ltd.",
+            "url": "https://www.scstechindia.com",
+            "logo": "https://www.scstechindia.com/assets/img/logo.png",
+            "description": "SCS Tech India Pvt. Ltd. provides digital transformation, AI/ML, software development, and smart city solutions across multiple industries including Oil & Gas, BFSI, Healthcare, Telecom, Defense, and more.",
+            "sameAs": [
+              "https://www.linkedin.com/company/scstechindia",
+              "https://twitter.com/scstechindia"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-1234567890",
+              "contactType": "customer service",
+              "areaServed": "IN",
+              "availableLanguage": ["English", "Hindi"]
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Patel Chambers, 13,Shrimad Rajchandraji Marg, Opera House, Girgaon",
+              "addressLocality": "Mumbai",
+              "addressRegion": "Maharashtra",
+              "postalCode": "400004",
+              "addressCountry": "IN"
+            }
+          }
+    </script>
+
+</head>
+<body class="appear-animate bg-black text-gray-100 font-sans antialiased">
+    <div class="page-loader">
+        <div class="loader">
+            <img loading="lazy"
+                 src="assets/images/loader.gif"
+                 alt="Logo" height="750" width="750" />
+        </div>
+    </div>
+    <div class="page" id="top">
+        <nav class="navbar navbar-expand-lg dark stick-fixed">
+            <div class="container-fluid px-4">
+                <!-- Logo -->
+                <div class="nav-logo-wrap mt-2">
+                    <a class="navbar-brand" href="/">
+                        <img loading="lazy" src="assets/images/logo.png" alt="Logo" width="150">
+                    </a>
+                </div>
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler d-lg-none">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- Main Navigation -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav text-gray-300">
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="#" data-menu="who-we-are">Who we are</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="#" data-menu="what-we-do">What we do</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="#" data-menu="resources">Resources</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                             <a class="nav-link" href="careers.html" data-menu="careers">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Contact Button -->
+                <button type="submit" class="btn-submit mt-2 btn d-none d-lg-block" onclick="window.location.href='contactus.html';">
+                    <span class="btn-text">Contact Us</span>
+                    <div class="circle-background"></div>
+                    <div class="arrow-circle">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"></path>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </nav>
+        <!-- What We Do Mega Menu -->
+        <div class="mega-menu" id="what-we-do-menu">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="mega-menu-title">What We Do</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Industries</h4>
+                        <ul class="list-unstyled mega-list">
+                            <li><a class="text-black" href="gas-power.html">Oil, Gas & Power</a></li>
+                            <li>
+                                <a class="text-black" href="banking.html">
+                                    Banking, Financial Services &
+                                    Insurance
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="homeland-security.html">
+                                    Homeland Security &
+                                    Defense
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="transport-logistics.html">
+                                    Transport &
+                                    Logistics
+                                </a>
+                            </li>
+                            <li><a class="text-black" href="#">Telecom</a></li>
+                            <li><a class=" text-black" href="healthcare.html">Healthcare</a></li>
+                            <li><a class="text-black" href="agriculture.html">Agriculture</a></li>
+                            <li><a class="text-black" href="education.html">Education</a></li>
+                            <li>
+                                <a class="text-black" href="critical-it.html">Critical IT & Urban Infrastructure</a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="solid-waste.html">
+                                    Solid Waste
+                                    Management
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="capacity-building.html">
+                                    Capacity Building & Skill
+                                    Development
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Expertise</h4>
+                        <ul class="list-unstyled mega-list">
+                            <li>
+                                <a class="text-black" href="digital-transformation.html">
+                                    Digital
+                                    Transformation
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="software-development.html">
+                                    Software
+                                    Development
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="ai-ml.html">
+                                    AI/ML & Data Analytics
+                                    Services
+                                </a>
+                            </li>
+                            <li><a class="text-black" href="rpa.html">Robotic Process Automation</a></li>
+                            <li><a class="text-black" href="blockchain.html">Blockchain</a></li>
+                            <li>
+                                <a class="text-black" href="gis.html">Geographic Information System ( GIS )</a>
+                            </li>
+                            <li><a class="text-black" href="cybersecurity.html">Cybersecurity</a></li>
+                            <li><a class="text-black" href="cloud.html">Cloud</a></li>
+                            <li><a class="text-black" href="it-consultancy.html">IT Consultancy</a></li>
+                            <li>
+                                <a class="text-black" href="data-center.html">Data Center Services</a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="disaster-emergency.html">
+                                    Disaster/Emergency
+                                    Services
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Products</h4>
+                        <ul class="list-unstyled mega-list">
+                            <li>
+                                <a class="text-black" href="ida.html">
+                                    Intelligent Debriefing with
+                                    Analytics(IDA)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="smart-landslide.html">Smart Landslide Early Warning System</a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="gis-tracking.html">
+                                    GIS-based Workforce & Fleet
+                                    Tracking System
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="project-process.html">Project Process Management System</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Resources Mega Menu -->
+        <div class="mega-menu" id="resources-menu">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="mega-menu-title">Resources</h5>
+                        <ul class="list-unstyled mega-list">
+                            <li><a class="text-black" href="blog.html">Blogs</a></li>
+                            <li><a class="text-black" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="text-black" href="newsandevents.html">News & Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Who We Are Mega Menu -->
+        <div class="mega-menu" id="who-we-are-menu">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="mega-menu-title">Who We Are</h5>
+                        <ul class="list-unstyled mega-list">
+                            <li><a class="text-black" href="aboutscs.html">About SCS Tech</a></li>
+                            <li><a class="text-black" href="lifeatscs.html">Life at SCS Tech</a></li>
+                            <li>
+                                <a class="text-black" href="awardsandrecognisations.html">
+                                    Awards &
+                                    Recognition
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navigation panel -->
+        <div id="mobile-nav-container">
+            <div class="mobile-nav-header">
+                <a href="/">
+                    <img loading="lazy" src="assets/images/logo.png" alt="Logo" width="110">
+                </a>
+                <button class="mobile-close-btn">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <!-- Main Mobile Menu -->
+            <div id="mobile-main-menu" class="mobile-submenu active">
+                <ul class="mobile-menu-list">
+                    <li>
+                        <a href="#" class="mobile-menu-link" data-target="mobile-who-we-are">
+                            Who we are
+                            <span class="mobile-menu-arrow"><i class="fa fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="mobile-menu-link" data-target="mobile-what-we-do">
+                            What we do
+                            <span class="mobile-menu-arrow"><i class="fa fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="mobile-menu-link" data-target="mobile-resources">
+                            Resources
+                            <span class="mobile-menu-arrow"><i class="fa fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="career">Careers</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Who We Are Submenu -->
+            <div id="mobile-who-we-are" class="mobile-submenu" data-parent="mobile-main-menu">
+                <div class="mobile-submenu-header">
+                    <button class="mobile-back-btn">
+                        <i class="fa fa-chevron-left"></i> Back
+                    </button>
+                    <h3>Who We Are</h3>
+                </div>
+                <ul class="mobile-menu-list">
+                    <li class="nav-item mt-2">
+                        <a class="nav-link" href="#" data-menu="who-we-are">Who we are</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a class="nav-link" href="#" data-menu="what-we-do">What we do</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a class="nav-link" href="#" data-menu="resources">Resources</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                         <a class="nav-link" href="careers.html" data-menu="careers">Careers</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- What We Do Submenu -->
+            <div id="mobile-what-we-do" class="mobile-submenu" data-parent="mobile-main-menu">
+                <div class="mobile-submenu-header">
+                    <button class="mobile-back-btn">
+                        <i class="fa fa-chevron-left"></i> Back
+                    </button>
+                    <h3>What We Do</h3>
+                </div>
+                <div class="mobile-submenu-section">
+                    <h4>Industries</h4>
+                    <ul class="mobile-menu-list">
+                        <li><a class="text-black" href="gas-power.html">Oil, Gas & Power</a></li>
+                        <li>
+                            <a class="text-black" href="banking.html">
+                                Banking, Financial Services &
+                                Insurance
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-black" href="homeland-security.html">
+                                Homeland Security &
+                                Defense
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-black" href="transport-logistics.html">
+                                Transport &
+                                Logistics
+                            </a>
+                        </li>
+                        <li><a class="text-black" href="#">Telecom</a></li>
+                        <li><a class=" text-black" href="healthcare.html">Healthcare</a></li>
+                        <li><a class="text-black" href="agriculture.html">Agriculture</a></li>
+                        <li><a class="text-black" href="education.html">Education</a></li>
+                        <li>
+                            <a class="text-black" href="critical-it.html">Critical IT & Urban Infrastructure</a>
+                        </li>
+                        <li>
+                            <a class="text-black" href="solid-waste.html">
+                                Solid Waste
+                                Management
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-black" href="capacity-building.html">
+                                Capacity Building & Skill
+                                Development
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-submenu-section">
+                    <h4>Expertise</h4>
+                    <ul class="mobile-menu-list">
+                        <li>
+                            <a href="digital-transformation.html">
+                                Digital
+                                Transformation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="software-development.html">
+                                Software
+                                Development
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ai-ml.html">
+                                AI/ML & Data Analytics
+                                Services
+                            </a>
+                        </li>
+                        <li><a href="rpa.html">Robotic Process Automation</a></li>
+                        <li><a href="blockchain.html">Blockchain</a></li>
+                        <li>
+                            <a href="gis.html">Geographic Information System ( GIS )</a>
+                        </li>
+                        <li><a href="cybersecurity.html">Cybersecurity</a></li>
+                        <li><a href="cloud.html">Cloud</a></li>
+                        <li><a href="it-consultancy.html">IT Consultancy</a></li>
+                        <li>
+                            <a href="data-center.html">Data Center Services</a>
+                        </li>
+                        <li>
+                            <a href="disaster-emergency.html">
+                                Disaster/Emergency
+                                Services
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-submenu-section">
+                    <h4>Products</h4>
+                    <ul class="mobile-menu-list">
+                        <li>
+                            <a href="ida.html">
+                                Intelligent Debriefing with
+                                Analytics(IDA)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="smart-landslide.html">Smart Landslide Early Warning System</a>
+                        </li>
+                        <li>
+                            <a href="gis-tracking.html">
+                                GIS-based Workforce & Fleet
+                                Tracking System
+                            </a>
+                        </li>
+                        <li>
+                            <a href="project-process.html">Project Process Management System</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Resources Submenu -->
+            <div id="mobile-resources" class="mobile-submenu" data-parent="mobile-main-menu">
+                <div class="mobile-submenu-header">
+                    <button class="mobile-back-btn">
+                        <i class="fa fa-chevron-left"></i> Back
+                    </button>
+                    <h3>Resources</h3>
+                </div>
+                <ul class="mobile-menu-list">
+                    <li><a class="text-black" href="blog.html">Blogs</a></li>
+                    <li><a class="text-black" href="case-studies.html">Case Studies</a></li>
+                    <li><a class="text-black" href="newsandevents.html">News & Events</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <section class="hero-video-container">
+            <div class="video-overlay"></div>
+            <video id="hero-video" class="hero-video" muted loop autoplay>
+                <source src="assets/video/About SCS Tech.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="video-controls">
+                <button class="play-btn">❚❚</button>
+                <input type="range" class="progress-slider" min="0" max="100" value="0">
+                <button class="mute-btn">🔇</button>
+                <button class="fullscreen-btn">⛶</button>
+            </div>
+        </section>
+
+
+        <style>
+            /* Hero Video Styles */
+            .hero-video-container {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0; /* Remove any default margins */
+                padding: 0; /* Remove any default padding */
+            }
+
+            .hero-video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                z-index: 1;
+                object-fit: cover; /* Ensures video covers entire container without distortion */
+                border: none; /* Explicitly remove any borders */
+                outline: none; /* Remove focus outline */
+            }
+
+            .hero-video-container * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                outline: 0;
+                box-shadow: none;
+            }
+
+            .hero-video {
+                -moz-outline: none;
+                -webkit-outline: none;
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            .video-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.3);
+                z-index: 2;
+            }
+
+            .hero-content {
+                position: relative;
+                z-index: 3;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                max-width: 800px;
+            }
+
+                .hero-content h1 {
+                    font-size: 3rem;
+                    margin-bottom: 1rem;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                }
+
+                .hero-content p {
+                    font-size: 1.5rem;
+                    margin-bottom: 2rem;
+                    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+                }
+
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 1.2rem;
+                background: #ff5500;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+
+                .cta-button:hover {
+                    background: #ff3300;
+                }
+
+            /* Video Controls */
+            .video-controls {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.7);
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                z-index: 4;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+
+            .hero-video-container:hover .video-controls {
+                opacity: 1;
+            }
+
+            .video-controls button {
+                background: transparent;
+                border: none;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+                margin: 0 5px;
+            }
+
+            .progress-slider {
+                flex-grow: 1;
+                height: 5px;
+                margin: 0 10px;
+                -webkit-appearance: none;
+                appearance: none;
+                background: rgba(255, 255, 255, 0.2);
+                outline: none;
+            }
+
+                .progress-slider::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background: #ff5500;
+                    cursor: pointer;
+                }
+
+                .progress-slider::-moz-range-thumb {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background: #ff5500;
+                    cursor: pointer;
+                }
+
+
+            /* Mobile Touch Overlay */
+            .mobile-touch-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                display: none;
+            }
+
+            /* Mobile-specific styles */
+            @@media (max-width: 768px) {
+                .hero-video-container {
+                    height: 80vh; /* Slightly smaller on mobile */
+                }
+
+                .video-controls {
+                    opacity: 1; /* Always show controls on mobile */
+                    padding: 8px;
+                }
+
+                .mobile-touch-overlay {
+                    display: block; /* Show touch overlay on mobile */
+                }
+
+                .video-controls button {
+                    min-width: 36px;
+                    font-size: 14px;
+                }
+
+                .progress-slider {
+                    height: 4px;
+                }
+            }
+
+            /* Very small devices */
+            @@media (max-width: 480px) {
+                .hero-video-container {
+                    height: 70vh;
+                }
+
+                .hero-content {
+                    padding: 15px;
+                }
+
+                .cta-button {
+                    padding: 10px 20px;
+                }
+            }
+        </style>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const video = document.getElementById('hero-video');
+                const playBtn = document.querySelector('.play-btn');
+                const muteBtn = document.querySelector('.mute-btn');
+                const progressSlider = document.querySelector('.progress-slider');
+                const fullscreenBtn = document.querySelector('.fullscreen-btn');
+                const heroContainer = document.querySelector('.hero-video-container');
+                const mobileTouchOverlay = document.querySelector('.mobile-touch-overlay');
+
+                // Detect mobile devices
+                const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+                // Mobile-specific setup
+                if (isMobile) {
+                    video.muted = false; // Start unmuted on mobile
+                    video.controls = false; // We'll use our custom controls
+                    muteBtn.textContent = '🔊';
+
+                    // Touch overlay for play/pause
+                    mobileTouchOverlay.addEventListener('click', function () {
+                        togglePlay();
+                        // Briefly show controls when tapping
+                        videoControls.style.opacity = 1;
+                        setTimeout(() => {
+                            if (!video.paused) {
+                                videoControls.style.opacity = 0;
+                            }
+                        }, 2000);
+                    });
+                } else {
+                    // Desktop - start muted for autoplay
+                    video.muted = true;
+                    muteBtn.textContent = '🔇';
+                    try {
+                        video.play();
+                    } catch (e) {
+                        console.log("Autoplay prevented:", e);
+                    }
+                }
+
+                // Play/Pause
+                playBtn.addEventListener('click', togglePlay);
+
+                function togglePlay() {
+                    if (video.paused) {
+                        video.play().catch(e => {
+                            // If play fails (often due to autoplay policies), show controls
+                            videoControls.style.opacity = 1;
+                            console.log("Play failed:", e);
+                        });
+                        playBtn.textContent = '❚❚';
+                    } else {
+                        video.pause();
+                        playBtn.textContent = '►';
+                    }
+                }
+
+                // Mute/Unmute
+                muteBtn.addEventListener('click', toggleMute);
+
+                function toggleMute() {
+                    video.muted = !video.muted;
+                    muteBtn.textContent = video.muted ? '🔇' : '🔊';
+                }
+
+                // Progress slider
+                video.addEventListener('timeupdate', updateProgress);
+
+                function updateProgress() {
+                    if (!isNaN(video.duration)) {
+                        const percent = (video.currentTime / video.duration) * 100;
+                        progressSlider.value = percent;
+                    }
+                }
+
+                progressSlider.addEventListener('input', function () {
+                    const seekTime = (this.value / 100) * video.duration;
+                    video.currentTime = seekTime;
+                });
+
+                // Fullscreen
+                fullscreenBtn.addEventListener('click', toggleFullscreen);
+
+                function toggleFullscreen() {
+                    if (!document.fullscreenElement) {
+                        heroContainer.requestFullscreen().catch(err => {
+                            console.error("Fullscreen error:", err);
+                        });
+                    } else {
+                        document.exitFullscreen();
+                    }
+                }
+
+                // Handle orientation changes on mobile
+                window.addEventListener('orientationchange', function () {
+                    // Recalculate video dimensions
+                    video.style.width = 'auto';
+                    video.style.height = 'auto';
+                });
+
+                // Better touch handling for progress slider
+                progressSlider.addEventListener('touchstart', function () {
+                    videoControls.style.opacity = 1;
+                });
+
+                // Hide controls after delay (mobile)
+                let hideControlsTimeout;
+                function resetHideControlsTimeout() {
+                    clearTimeout(hideControlsTimeout);
+                    if (!video.paused) {
+                        hideControlsTimeout = setTimeout(() => {
+                            videoControls.style.opacity = 0;
+                        }, 3000);
+                    }
+                }
+
+                heroContainer.addEventListener('mousemove', resetHideControlsTimeout);
+                heroContainer.addEventListener('touchmove', resetHideControlsTimeout);
+
+                // Initial setup
+                resetHideControlsTimeout();
+            });
+        </script>
+        <!-- Script to toggle video -->
+        <!-- About Us Section -->
+        <section id="about" class="py-20 small-section p-10">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-up">
+                        <div class="relative">
+                            <div class="absolute -top-6 -left-6 w-full h-full border-2 border-gray-700 rounded-xl"></div>
+                            <div class="relative bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                     alt="Our Team" class="w-1\/12 h-auto">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 md:pl-12 align-baseline" data-aos="fade-up" data-aos-delay="200">
+                        <h1 class="left-side-heading text-center mb-6"> <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-red-600">About Us</span> </h1>
+                        <p class="text-gray-300 mb-6 text-3xl ">
+                            SCS Tech is a trusted, next-generation IT & ITES company
+                            and a leading digital transformation services company, transforming industries with
+                            intelligent, future-ready digital transformation solutions. We don’t just implement
+                            technology — we engineer digital revolutions, enabling businesses to scale, secure, and
+                            innovate in an era of rapid disruption.
+                        </p>
+                        <p class="text-gray-300 mb-8 text-3xl ">
+                            With expertise spanning AI/ML services, Cybersecurity,
+                            GIS, Smart Automation, Cloud, and Enterprise IT, we blend digital innovation with
+                            industry-specific intelligence to deliver scalable, impact-driven solutions. Our
+                            approach is built on precision, agility, and resilience, ensuring businesses don’t just
+                            keep up—but stay ahead.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="small-section  pb-10">
+            <div class="relative text-start">
+                <h1 class="about-us-middle-text">
+                    Engineering the future beyond boundaries.
+                </h1>
+            </div>
+        </section>
+
+        <div class="row card-row">
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="custom-card h-100">
+                    <div class="background-shape"></div>
+                    <h2 class="card-title">Mission</h2>
+                    <p class="card-description-about2">
+                        Dedicated to delivering unparalleled customer satisfaction by consistently focusing on
+                        innovation and excellence in all IT infrastructure solutions.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="custom-card white-bg h-100">
+                    <h2 class="card-title">Vision</h2>
+                    <p class="card-description-about1">
+                        To be recognized among the top digital transformation companies in India, known for reliability
+                        and innovation powered by cutting-edge technology.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="custom-card h-100">
+                    <div class="background-shape"></div>
+                    <h2 class="card-title">Growth</h2>
+                    <p class="card-description-about2">
+                        Pioneering institutional expansion through innovation, strategic partnerships, and seamless
+                        global presence
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="custom-card white-bg h-100">
+                    <div class="background-shape"></div>
+                    <h2 class="card-title">Strategy</h2>
+                    <p class="card-description-about1">
+                        Plan, implement, and optimize cutting-edge technology that drives digital transformation and
+                        enables smart solutions for a connected world.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <section class="small-section  pb-10">
+            <!-- New Milestone Section -->
+            <div class="milestone-section1">
+                <div class="milestone-header1">
+                    <h1 class="milestone-title1">Our Milestones</h1>
+                    <div class="gradient-line2"></div>
+                </div>
+
+                <p class="milestone-desc1 text-3xl ">
+                    Founded on the principles of innovation and collaboration, SCS Tech India, a digital transformation
+                    company, was created to bridge the gap between complex engineering challenges and simplified digital
+                    transformation solutions. Over the years, we’ve grown into a global team of expert digital
+                    transformation consultants passionate about helping businesses scale, innovate, and thrive in an
+                    ever-changing digital landscape.
+                </p>
+            </div>
+            <div class="m-5">
+                <div class="timeline-line"></div>
+
+                <div class="milestone right">
+                    <div class="year-box">2010</div>
+                    <div class="milestone-content">
+                        <h3 class="milestone-title">Founded with a Vision</h3>
+                        <p class="milestone-desc">
+                            The beginning of a transformative journey in technology and
+                            innovation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="milestone left">
+                    <div class="year-box">2014</div>
+                    <div class="milestone-content">
+                        <h3 class="milestone-title">Achieved ₹100+ Crore Revenue</h3>
+                        <p class="milestone-desc">
+                            A major growth milestone reflecting customer trust and business
+                            excellence.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="milestone right">
+                    <div class="year-box">2015</div>
+                    <div class="milestone-content">
+                        <h3 class="milestone-title">First Global Footprint</h3>
+                        <p class="milestone-desc"> Established our first international sales office in Singapore.</p>
+                    </div>
+                </div>
+
+                <div class="milestone left">
+                    <div class="year-box">2017</div>
+                    <div class="milestone-content">
+                        <h3 class="milestone-title">Pan-India Expansion</h3>
+                        <p class="milestone-desc">Strengthened our presence with new offices in Delhi and Kolkata</p>
+                    </div>
+                </div>
+
+                <div class="milestone left">
+                    <div class="year-box">2018</div>
+                    <div class="milestone-content">
+                        <h3 class="milestone-title">Operational Scaling & Diversification</h3>
+                        <p class="milestone-desc">Expanded further with offices in Hyderabad and Bangalore.</p>
+                    </div>
+                </div>
+                <!-- 2018 Right - Event 1 -->
+                <div class="milestone right">
+                    <div class="year-box">2018</div>
+                    <div class="milestone-content">
+
+                        <h3 class="milestone-title">Inception of Software Division</h3>
+                        <p class="milestone-desc">
+                            Launched a dedicated software division, reinforcing our commitment to
+                            technological innovation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="milestone left">
+                    <div class="year-box">2019</div>
+                    <div class="milestone-content">
+                        <h3 class="milestone-title">Strategic Global Expansion</h3>
+                        <p class="milestone-desc">
+                            Broadened our international operations with offices in Dubai, Hong
+                            Kong, and London, reinforcing our global presence and influence.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="milestone right">
+                    <div class="year-box">2020</div>
+                    <div class="milestone-content">
+                        <h3 class="milestone-title">CMMI Level 3 Certification</h3>
+                        <p class="milestone-desc">
+                            Recognized for excellence in process maturity and quality management.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="milestone left">
+                    <div class="year-box">2021</div>
+                    <div class="milestone-content">
+                        <h3 class="milestone-title">Launch of Incubation Centre</h3>
+                        <p class="milestone-desc">
+                            Established an innovation-driven incubation center in India to nurture
+                            emerging ideas and startups.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="milestone right">
+                    <div class="year-box">2022</div>
+                    <div class="milestone-content">
+                        <h3 class="milestone-title">Leadership Transformation </h3>
+                        <p class="milestone-desc">
+                            Evolved into new verticals with expert-led teams, fostering
+                            specialized innovation and driving strategic growth.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="milestone left">
+                    <div class="year-box">2023</div>
+                    <div class="milestone-content">
+                        <h3 class="milestone-title">CMMI Level 5 Achievement</h3>
+                        <p class="milestone-desc">
+                            Honored with the prestigious CMMI Level 5, a rare recognition for
+                            exceptional process optimization and delivery excellence.
+                        </p>
+                    </div>
+                </div>
+                <div class="milestone right">
+                    <div class="year-box">2024</div>
+                    <div class="milestone-content">
+                        <h3 class="milestone-title">Pioneering Future Technologies</h3>
+                        <p class="milestone-desc">
+                            Made bold strides into next-gen tech with a focused expansion into
+                            AI/ML services, Gen AI, and more.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="milestone left">
+                    <div class="year-box">2025</div>
+                    <div class="milestone-content">
+                        <h3 class="milestone-title">Global Synergy & Strategic Alliances</h3>
+                        <p class="milestone-desc">
+                            Strengthening global market presence through high-impact partnerships
+                            and international expansion, amplifying capabilities and accelerating innovation worldwide.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="small-section  pb-10">
+            <h1 class="about-us-our-team-text">
+                Meet our Team
+            </h1>
+            <div class="row g-4 px-3 px-md-5 mb-5">
+                <div class="col-12 col-md-6 col-xl-2">
+                    <div class="leader-card text-center">
+                        <img loading="lazy"
+                             src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1746699824/sujit_patel_ddfgg4.png"
+                             alt="Sujit Patel" class="leader-image img-fluid">
+                        <div class="leader-info">
+                            <h3 class="leader-name">Sujit Patel</h3>
+                            <p class="leader-designation">CEO & MD</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-2">
+                    <div class="leader-card text-center">
+                        <img loading="lazy"
+                             src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1746699822/Jatin_wclkxp.png"
+                             alt="Jatin Maru" class="leader-image img-fluid">
+                        <div class="leader-info">
+                            <h3 class="leader-name">Jatin Maru</h3>
+                            <p class="leader-designation">VP- SCM & Commercials</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-2">
+                    <div class="leader-card text-center">
+                        <img loading="lazy"
+                             src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1746699827/anurag_lbkqav.png"
+                             alt="Anurag Deshpande" class="leader-image img-fluid">
+                        <div class="leader-info">
+                            <h3 class="leader-name">Anurag Deshpande</h3>
+                            <p class="leader-designation">VP- Presales & Operations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-2">
+                    <div class="leader-card text-center">
+                        <img loading="lazy"
+                             src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1746699840/dhiraj_pmnywk.png"
+                             alt="Dhiraj Udapure" class="leader-image img-fluid">
+                        <div class="leader-info">
+                            <h3 class="leader-name">Dhiraj Udapure</h3>
+                            <p class="leader-designation">VP- Technology & Business Development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-2">
+                    <div class="leader-card text-center">
+                        <img loading="lazy"
+                             src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1746699823/simran_tsqwlv.png"
+                             alt="Simran Ravat" class="leader-image img-fluid">
+                        <div class="leader-info">
+                            <h3 class="leader-name">Simran Ravat</h3>
+                            <p class="leader-designation">VP- HR & Branding</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-2">
+                    <div class="leader-card text-center">
+                        <img loading="lazy"
+                             src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1746699825/bhawesh_ds1iik.png"
+                             alt="Bhagesh Nigam" class="leader-image img-fluid">
+                        <div class="leader-info">
+                            <h3 class="leader-name">Bhagesh Nigam</h3>
+                            <p class="leader-designation">GM- Accounts & Taxations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="small-section  pb-10 hero-section-about-us">
+            <div class="hero-content-about-us">
+                <h1 class="hero-title-about-us">Ready to Transform Your Business?</h1>
+                <p class="hero-subtitle-about-us mt-1">
+                    Partner with us for expert guidance and strategies that drive
+                    growth and success.
+                </p>
+                <a href="#" class="hero-button-about-us" onclick="location.href='contact-us'">Connect With Us</a>
+            </div>
+        </section>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const milestones = document.querySelectorAll('.milestone');
+
+                function checkMilestones() {
+                    milestones.forEach((milestone, index) => {
+                        const rect = milestone.getBoundingClientRect();
+                        const windowHeight = window.innerHeight;
+
+                        if (rect.top <= windowHeight * 0.85 && rect.bottom >= 0) {
+                            setTimeout(() => {
+                                milestone.classList.add('visible');
+                            }, index * 100);
+                        }
+                    });
+                }
+
+                // Initial check
+                checkMilestones();
+
+                // Check on scroll
+                window.addEventListener('scroll', checkMilestones);
+            });
+        </script>
+    </div>
+
+    <footer class="footer">
+        <div class="row mr-1">
+            <div class="col-md-2 mb-2 mb-md-0">
+                <div class="footer-text">© 2025 SCS Tech</div>
+            </div>
+            <div class="col-md-8 mb-2 mb-md-0">
+                <div class="footer-text">
+                    <span class="space">Disclaimer</span>
+                    <span>Privacy Policy</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="d-flex justify-content-start gap-3 social-icons">
+                    <a href="https://www.linkedin.com/company/scstechindia-pvt-ltd/?viewAsMember=true"
+                       title="LinkedIn+" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/scstech_india" title="Twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/scs.techindia/" title="Instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/scstechindiapvtltd" title="Facebook" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/adminscstech" title="YouTube" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.viewport.mini.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="assets/js/all.js"></script>
+    <script type="text/javascript" src="assets/js/blog.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+    <script src="https://kit.fontawesome.com/e8c1c6e963.js" crossorigin="anonymous"></script>
+
+</body>
+</html> 

@@ -1,0 +1,53 @@
+
+<!-- OPTIMIZED SCRIPT LOADING STRATEGY -->
+
+<!-- 1. CRITICAL INLINE JS (< 1KB) -->
+<script>
+// Navigation toggle - critical functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.querySelector('.navbar-toggler');
+    const nav = document.querySelector('.navbar-collapse');
+    
+    if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    }
+});
+
+// Smooth scroll - replace jQuery.scrollTo
+function smoothScrollTo(element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+<!-- 2. ESSENTIAL BUNDLE (async) -->
+<script src="assets/js/essential-bundle.min.js" async></script>
+
+<!-- 3. FEATURE BUNDLES (defer, conditional loading) -->
+<script>
+// Load carousel only if carousel elements exist
+if (document.querySelector('.owl-carousel')) {
+    const script = document.createElement('script');
+    script.src = 'assets/js/carousel-bundle.min.js';
+    script.async = true;
+    document.head.appendChild(script);
+}
+
+// Load animations only if elements with animation classes exist
+if (document.querySelector('[class*="wow"], [class*="animate"]')) {
+    const script = document.createElement('script');
+    script.src = 'assets/js/animations-bundle.min.js';
+    script.async = true;
+    document.head.appendChild(script);
+}
+</script>
+
+<!-- 4. ANALYTICS (async) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K6N9WEW7B0"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-K6N9WEW7B0');
+</script>

@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCS Tech India PVT Ltd.</title>
+    
+    <!-- CRITICAL CSS INLINED (extract first-fold styles) -->
+    <style>
+        /* Critical above-the-fold styles - inline for immediate rendering */
+        body { margin: 0; background: #000; color: #f3f4f6; font-family: system-ui, sans-serif; }
+        .page-loader { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: #000; display: flex; align-items: center; justify-content: center; z-index: 9999; }
+        .loader-spinner { width: 60px; height: 60px; border: 3px solid #333; border-top: 3px solid #3B82F6; border-radius: 50%; animation: spin 1s linear infinite; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .navbar { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.9); backdrop-filter: blur(10px); z-index: 1000; }
+    </style>
+    
+    <!-- OPTIMIZED RESOURCE LOADING -->
+    <link rel="preload" href="assets/css/tailwind.purged.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/tailwind.purged.css"></noscript>
+    
+    <!-- Load only essential CSS synchronously -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="preload" href="assets/css/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="optimized-loader.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://kit.fontawesome.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    
+    <!-- SINGLE FontAwesome load with defer -->
+    <script src="https://kit.fontawesome.com/e8c1c6e963.js" crossorigin="anonymous" defer></script>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SCS Tech India Pvt. Ltd.",
+        "url": "https://www.scstechindia.com",
+        "logo": "https://www.scstechindia.com/assets/images/logo.png",
+        "description": "SCS Tech India Pvt. Ltd. provides digital transformation, AI/ML, software development, and smart city solutions across multiple industries.",
+        "sameAs": [
+            "https://www.linkedin.com/company/scstechindia",
+            "https://twitter.com/scstechindia"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-1234567890",
+            "contactType": "customer service",
+            "areaServed": "IN",
+            "availableLanguage": ["English", "Hindi"]
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Patel Chambers, 13,Shrimad Rajchandraji Marg, Opera House, Girgaon",
+            "addressLocality": "Mumbai",
+            "addressRegion": "Maharashtra",
+            "postalCode": "400004",
+            "addressCountry": "IN"
+        }
+    }
+    </script>
+</head>
+
+<body class="appear-animate bg-black text-gray-100 font-sans antialiased">
+    <!-- OPTIMIZED LOADER - CSS instead of 3MB GIF -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <div class="page" id="top">
+        <!-- STREAMLINED NAVIGATION -->
+        <nav class="navbar navbar-expand-lg dark stick-fixed">
+            <div class="container-fluid px-4">
+                <!-- Logo with optimized loading -->
+                <div class="nav-logo-wrap mt-2">
+                    <a class="navbar-brand" href="/">
+                        <img src="assets/images/logo.png" alt="SCS Tech India Logo" width="150" height="50" loading="eager">
+                    </a>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler d-lg-none" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <!-- Main Navigation -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav text-gray-300">
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="#" data-menu="who-we-are">Who we are</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="#" data-menu="what-we-do">What we do</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="#" data-menu="resources">Resources</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                             <a class="nav-link" href="careers.html">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Contact Button -->
+                <button type="button" class="btn-submit mt-2 btn d-none d-lg-block" onclick="window.location.href='contactus.html';">
+                    <span class="btn-text">Contact Us</span>
+                    <div class="circle-background"></div>
+                    <div class="arrow-circle">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"></path>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </nav>
+
+        <!-- MAIN CONTENT AREA -->
+        <main>
+            <!-- Hero Section with optimized background -->
+            <section class="hero-section relative min-h-screen flex items-center justify-center">
+                <div class="container mx-auto px-4 text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+                        Digital Transformation Excellence
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
+                        Leading India's digital revolution with cutting-edge AI/ML, software development, and smart city solutions
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="contactus.html" class="btn-primary">Get Started</a>
+                        <a href="aboutscs.html" class="btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER (shared component would go here) -->
+        <footer class="bg-gray-900 py-16">
+            <div class="container mx-auto px-4">
+                <div class="text-center">
+                    <img src="assets/images/logo.png" alt="SCS Tech India" width="150" class="mx-auto mb-6" loading="lazy">
+                    <p class="text-gray-400 mb-6">Transforming businesses through technology innovation</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- OPTIMIZED SCRIPT LOADING -->
+    <!-- Critical scripts bundled and minified -->
+    <script>
+        // Inline critical JavaScript for immediate execution
+        // Page loader hide function
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('pageLoader');
+            if (loader) {
+                loader.style.opacity = '0';
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 500);
+            }
+        });
+        
+        // Critical navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.navbar-toggler');
+            const navCollapse = document.querySelector('.navbar-collapse');
+            
+            if (navToggle && navCollapse) {
+                navToggle.addEventListener('click', function() {
+                    navCollapse.classList.toggle('show');
+                });
+            }
+        });
+    </script>
+
+    <!-- Defer non-critical scripts -->
+    <script defer>
+        // Load bundled scripts asynchronously
+        const scripts = [
+            'assets/js/optimized-bundle.js', // This would contain all necessary JS bundled and minified
+        ];
+        
+        scripts.forEach(src => {
+            const script = document.createElement('script');
+            script.src = src;
+            script.async = true;
+            document.head.appendChild(script);
+        });
+    </script>
+
+    <!-- Analytics - async loading -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K6N9WEW7B0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K6N9WEW7B0', {
+            'linker': {
+                'domains': ['blog.scstechindia.com']
+            }
+        });
+    </script>
+</body>
+</html>

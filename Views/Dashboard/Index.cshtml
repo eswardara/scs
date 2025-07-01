@@ -1,0 +1,296 @@
+@model DashboardViewModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-900">Dashboard Overview</h1>
+        <p class="mt-2 text-gray-600">Welcome back! Here's what's happening with your business today.</p>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <!-- Total Revenue -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-600">Total Revenue</p>
+                    <p class="text-3xl font-bold text-gray-900">$@Model.TotalRevenue.ToString("N0")</p>
+                    <p class="text-sm text-success">+12.5% from last month</p>
+                </div>
+                <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Orders -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-600">Total Orders</p>
+                    <p class="text-3xl font-bold text-gray-900">@Model.TotalOrders.ToString("N0")</p>
+                    <p class="text-sm text-success">+8.2% from last month</p>
+                </div>
+                <div class="w-12 h-12 bg-secondary bg-opacity-10 rounded-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Active Users -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-600">Active Users</p>
+                    <p class="text-3xl font-bold text-gray-900">@Model.ActiveUsers.ToString("N0")</p>
+                    <p class="text-sm text-success">+15.3% from last month</p>
+                </div>
+                <div class="w-12 h-12 bg-success bg-opacity-10 rounded-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conversion Rate -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-600">Conversion Rate</p>
+                    <p class="text-3xl font-bold text-gray-900">@Model.ConversionRate.ToString("F1")%</p>
+                    <p class="text-sm text-warning">-2.1% from last month</p>
+                </div>
+                <div class="w-12 h-12 bg-warning bg-opacity-10 rounded-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Section -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+        <!-- Sales Chart -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-gray-900">Sales Overview</h3>
+                <div class="flex space-x-2">
+                    <button class="px-3 py-1 text-xs font-medium text-primary bg-primary bg-opacity-10 rounded-full">7D</button>
+                    <button class="px-3 py-1 text-xs font-medium text-gray-500 hover:text-primary rounded-full">30D</button>
+                    <button class="px-3 py-1 text-xs font-medium text-gray-500 hover:text-primary rounded-full">90D</button>
+                </div>
+            </div>
+            <div class="h-64">
+                <canvas id="salesChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Users Chart -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-gray-900">User Activity</h3>
+                <div class="flex space-x-2">
+                    <button class="px-3 py-1 text-xs font-medium text-primary bg-primary bg-opacity-10 rounded-full">7D</button>
+                    <button class="px-3 py-1 text-xs font-medium text-gray-500 hover:text-primary rounded-full">30D</button>
+                </div>
+            </div>
+            <div class="h-64">
+                <canvas id="usersChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Recent Activities -->
+        <div class="lg:col-span-2 bg-white rounded-lg shadow-sm border border-gray-200">
+            <div class="p-6 border-b border-gray-200">
+                <h3 class="text-lg font-semibold text-gray-900">Recent Activities</h3>
+            </div>
+            <div class="p-6">
+                <div class="space-y-4" id="recentActivities">
+                    @foreach (var activity in Model.RecentActivities)
+                    {
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0">
+                                @if (activity.Status == "Success")
+                                {
+                                    <div class="w-2 h-2 bg-success rounded-full"></div>
+                                }
+                                else if (activity.Status == "Failed")
+                                {
+                                    <div class="w-2 h-2 bg-danger rounded-full"></div>
+                                }
+                                else
+                                {
+                                    <div class="w-2 h-2 bg-warning rounded-full"></div>
+                                }
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900 truncate">@activity.UserName</p>
+                                <p class="text-sm text-gray-500 truncate">@activity.Description</p>
+                            </div>
+                            <div class="flex-shrink-0 text-sm text-gray-500">
+                                @activity.Timestamp.ToString("HH:mm")
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="mt-4">
+                    <button class="text-sm text-primary hover:text-primary font-medium">View all activities</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Status -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+            <div class="p-6 border-b border-gray-200">
+                <h3 class="text-lg font-semibold text-gray-900">System Status</h3>
+            </div>
+            <div class="p-6 space-y-4">
+                @if (Model.SystemMetrics.Any())
+                {
+                    var latestMetric = Model.SystemMetrics.First();
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">CPU Usage</span>
+                                <span class="font-medium">@latestMetric.CpuUsage.ToString("F1")%</span>
+                            </div>
+                            <div class="mt-1 w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: @latestMetric.CpuUsage%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Memory Usage</span>
+                                <span class="font-medium">@latestMetric.MemoryUsage.ToString("F1")%</span>
+                            </div>
+                            <div class="mt-1 w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-success h-2 rounded-full" style="width: @latestMetric.MemoryUsage%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Disk Usage</span>
+                                <span class="font-medium">@latestMetric.DiskUsage.ToString("F1")%</span>
+                            </div>
+                            <div class="mt-1 w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-warning h-2 rounded-full" style="width: @latestMetric.DiskUsage%"></div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <div class="pt-4 border-t border-gray-200">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-2 h-2 bg-success rounded-full animate-pulse"></div>
+                        <span class="text-sm text-gray-600">All systems operational</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Initialize Charts
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sales Chart
+            const salesCtx = document.getElementById('salesChart').getContext('2d');
+            fetch('/Dashboard/GetChartData?type=sales')
+                .then(response => response.json())
+                .then(data => {
+                    new Chart(salesCtx, {
+                        type: 'line',
+                        data: {
+                            labels: data.map(d => new Date(d.date).toLocaleDateString()),
+                            datasets: [{
+                                label: 'Revenue',
+                                data: data.map(d => d.revenue),
+                                borderColor: '#3B82F6',
+                                backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                                tension: 0.4,
+                                fill: true
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    ticks: {
+                                        callback: function(value) {
+                                            return '$' + value.toLocaleString();
+                                        }
+                                    }
+                                }
+                            },
+                            plugins: {
+                                legend: {
+                                    display: false
+                                }
+                            }
+                        }
+                    });
+                });
+
+            // Users Chart
+            const usersCtx = document.getElementById('usersChart').getContext('2d');
+            fetch('/Dashboard/GetChartData?type=users')
+                .then(response => response.json())
+                .then(data => {
+                    new Chart(usersCtx, {
+                        type: 'bar',
+                        data: {
+                            labels: data.map(d => new Date(d.date).toLocaleDateString()),
+                            datasets: [{
+                                label: 'Active Users',
+                                data: data.map(d => d.activeUsers),
+                                backgroundColor: '#10B981',
+                                borderRadius: 4
+                            }, {
+                                label: 'New Signups',
+                                data: data.map(d => d.newSignups),
+                                backgroundColor: '#6366F1',
+                                borderRadius: 4
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            },
+                            plugins: {
+                                legend: {
+                                    display: false
+                                }
+                            }
+                        }
+                    });
+                });
+
+            // Auto-refresh activities every 30 seconds
+            setInterval(function() {
+                fetch('/Dashboard/GetRecentActivities')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('recentActivities').innerHTML = html;
+                    });
+            }, 30000);
+        });
+    </script>
+}

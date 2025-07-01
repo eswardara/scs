@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "/workspace/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/workspace/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.DashboardApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.DashboardApp.props",
+      "PackagePath": "build\\DashboardApp.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.DashboardApp.props",
+      "PackagePath": "buildMultiTargeting\\DashboardApp.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.DashboardApp.props",
+      "PackagePath": "buildTransitive\\DashboardApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

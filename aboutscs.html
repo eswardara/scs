@@ -498,16 +498,16 @@
                 </div>
                 <ul class="mobile-menu-list">
                     <li class="nav-item mt-2">
-                        <a class="nav-link" href="#" data-menu="who-we-are">Who we are</a>
+                        <a class="nav-link" href="aboutscs.html">About SCS Tech</a>
                     </li>
                     <li class="nav-item mt-2">
-                        <a class="nav-link" href="#" data-menu="what-we-do">What we do</a>
+                       <a class="nav-link" href="lifeatscs.html">Life at SCS Tech</a>
                     </li>
                     <li class="nav-item mt-2">
-                        <a class="nav-link" href="#" data-menu="resources">Resources</a>
-                    </li>
-                    <li class="nav-item mt-2">
-                         <a class="nav-link" href="careers.html" data-menu="careers">Careers</a>
+                        <a class="nav-link" href="awardsandrecognisations.html">
+                            Awards &
+                            Recognition
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -643,7 +643,7 @@
         </div>
 
 
-        <section class="hero-video-container">
+        <section class="hero-video-container w-full">
             <div class="video-overlay"></div>
             <video id="hero-video" class="hero-video" muted loop autoplay>
                 <source src="assets/video/About SCS Tech.mp4" type="video/mp4">
@@ -660,203 +660,7 @@
 
 
         <style>
-            /* Hero Video Styles */
-            .hero-video-container {
-                position: relative;
-                width: 100%;
-                height: 100vh;
-                overflow: hidden;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0; /* Remove any default margins */
-                padding: 0; /* Remove any default padding */
-            }
-
-            .hero-video {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                min-width: 100%;
-                min-height: 100%;
-                width: auto;
-                height: auto;
-                z-index: 1;
-                object-fit: cover; /* Ensures video covers entire container without distortion */
-                border: none; /* Explicitly remove any borders */
-                outline: none; /* Remove focus outline */
-            }
-
-            .hero-video-container * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-                border: 0;
-                outline: 0;
-                box-shadow: none;
-            }
-
-            .hero-video {
-                -moz-outline: none;
-                -webkit-outline: none;
-                -webkit-tap-highlight-color: transparent;
-            }
-
-            .video-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.3);
-                z-index: 2;
-            }
-
-            .hero-content {
-                position: relative;
-                z-index: 3;
-                color: white;
-                text-align: center;
-                padding: 20px;
-                max-width: 800px;
-            }
-
-                .hero-content h1 {
-                    font-size: 3rem;
-                    margin-bottom: 1rem;
-                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-                }
-
-                .hero-content p {
-                    font-size: 1.5rem;
-                    margin-bottom: 2rem;
-                    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-                }
-
-            .cta-button {
-                padding: 12px 30px;
-                font-size: 1.2rem;
-                background: #ff5500;
-                color: white;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-                transition: background 0.3s;
-            }
-
-                .cta-button:hover {
-                    background: #ff3300;
-                }
-
-            /* Video Controls */
-            .video-controls {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-               /* background: rgba(0, 0, 0, 0.7);*/
-                padding: 10px;
-                display: flex;
-                align-items: center;
-                z-index: 4;
-                opacity: 0;
-                transition: opacity 0.3s;
-            }
-
-            .hero-video-container:hover .video-controls {
-                opacity: 1;
-            }
-
-            .video-controls button {
-                background: transparent;
-                border: none;
-                color: white;
-                font-size: 16px;
-                cursor: pointer;
-                margin: 0 5px;
-            }
-
-            .progress-slider {
-                flex-grow: 1;
-                height: 0px;
-                margin: 0 10px;
-                -webkit-appearance: none;
-                appearance: none;
-                /*background: rgba(255, 255, 255, 0.2);*/
-                outline: none;
-                opacity: 0.1;
-            }
-
-                .progress-slider::-webkit-slider-thumb {
-                    -webkit-appearance: none;
-                    appearance: none;
-                    width: 15px;
-                    height: 15px;
-                    border-radius: 50%;
-                    background: #ff5500;
-                    cursor: pointer;
-                }
-
-                .progress-slider::-moz-range-thumb {
-                    width: 15px;
-                    height: 15px;
-                    border-radius: 50%;
-                    background: #ff5500;
-                    cursor: pointer;
-                }
-
-
-            /* Mobile Touch Overlay */
-            .mobile-touch-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: 2;
-                display: none;
-            }
-
-            /* Mobile-specific styles */
-            @@media (max-width: 768px) {
-                .hero-video-container {
-                    height: 80vh; /* Slightly smaller on mobile */
-                }
-
-                .video-controls {
-                    opacity: 1; /* Always show controls on mobile */
-                    padding: 8px;
-                }
-
-                .mobile-touch-overlay {
-                    display: block; /* Show touch overlay on mobile */
-                }
-
-                .video-controls button {
-                    min-width: 36px;
-                    font-size: 14px;
-                }
-
-                .progress-slider {
-                    height: 4px;
-                }
-            }
-
-            /* Very small devices */
-            @@media (max-width: 480px) {
-                .hero-video-container {
-                    height: 70vh;
-                }
-
-                .hero-content {
-                    padding: 15px;
-                }
-
-                .cta-button {
-                    padding: 10px 20px;
-                }
-            }
+            
         </style>
         <script>
 
@@ -874,7 +678,7 @@
 
                 // Mobile-specific setup
                 if (isMobile) {
-                    video.muted = false; // Start unmuted on mobile
+                    video.muted = true; // Start unmuted on mobile
                     video.controls = false; // We'll use our custom controls
                     muteBtn.textContent = '🔊';
 

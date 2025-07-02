@@ -15,12 +15,7 @@
     font-weight: 400;
     font-style: normal;
 }
-.title {
-    font-size: 4rem;
-    color: #ff825e;
-    font-weight: 700;
-    margin: 0px;
-}
+
 
 .align-center {
     text-align: center !important;
@@ -11090,7 +11085,6 @@ textarea.form-control {
     font-weight: 700;
     line-height: 43px; /* 148.276% */
     text-transform: capitalize;
-    margin:0px;
 }
 
 .sector-para {

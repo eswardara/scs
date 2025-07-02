@@ -13159,3 +13159,123 @@ p.career-text {
         display: block;
     }
 }
+
+/* Video Controls */
+.video-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background: rgba(0, 0, 0, 0.7);*/
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 4;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.hero-video-container:hover .video-controls {
+    opacity: 1;
+}
+
+.video-controls button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.progress-slider {
+    flex-grow: 1;
+    height: 0px;
+    margin: 0 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    /*background: rgba(255, 255, 255, 0.2);*/
+    outline: none;
+    opacity: 0.1;
+}
+
+    .progress-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #ff5500;
+        cursor: pointer;
+    }
+
+    .progress-slider::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #ff5500;
+        cursor: pointer;
+    }
+
+
+/* Mobile Touch Overlay */
+.mobile-touch-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
+
+
+/* Mobile-specific styles */
+@media (min-width: 300px) and (max-width: 568px) {
+    .hero-video-container {
+        padding-bottom: 75%;
+        position: relative;
+        /* 16:9 Aspect Ratio */
+        height: 26vh !important; /* Slightly smaller on mobile */
+    }
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .video-controls {
+        opacity: 1; /* Always show controls on mobile */
+        padding: 8px;
+    }
+
+    .mobile-touch-overlay {
+        display: block; /* Show touch overlay on mobile */
+    }
+
+    .video-controls button {
+        min-width: 36px;
+        font-size: 14px;
+    }
+
+    .progress-slider {
+        height: 4px;
+    }
+}
+
+/* Very small devices */
+@media (max-width: 480px) {
+    .hero-video-container {
+        height: 30vh;
+    }
+
+    .hero-content {
+        padding: 15px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+}

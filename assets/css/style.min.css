@@ -8510,10 +8510,12 @@ section:hover .small-item-carousel .owl-next {
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
+    top: 5px;
+    right: 5px;
 }
 
 .arrow-circle {
-    position: relative;
+    /* position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -8522,7 +8524,7 @@ section:hover .small-item-carousel .owl-next {
     border-radius: 50%;
     background-color: black;
     z-index: 2;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease; */
 }
 
 .circle-background {

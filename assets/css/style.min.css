@@ -12139,7 +12139,6 @@ p.career-text {
 
 .img-para {
     color: #FFF;
-    text-align: center;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -12670,36 +12669,42 @@ p.career-text {
     display: flex;
     transition: transform 0.5s ease;
     width: 100%;
+    /* gap: 20px; */
 }
 
 .product-card {
-    width: 25%;
-    padding: 0 10px;
-    flex-shrink: 0;
-    min-width: 25%; /* Ensure the card takes up at least 25% of container */
-    display: block; /* Make sure display is block or flex */
-}
-
-.product-card-body {
-    background-color: #f44336;
-    padding: 20px;
+    background: #ff4d4d;
+    color: #fff;
     border-radius: 5px;
-    height: 100%;
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
+    margin: 10px;
+    padding: 24px 20px;
+    min-width: 250px;
+    max-width: 350px;
+    transition: box-shadow 0.3s;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    
 }
-
 .product-card-title {
-    font-size: 18px;
-    margin-bottom: 12px;
+    font-size: 1.3rem;
     font-weight: bold;
-    color: #fff;
+    margin-bottom: 10px;
 }
-
 .product-card-text {
-    font-size: 14px;
-    line-height: 1.4;
-    color: #fff;
+    font-size: 1rem;
+}
+@media (max-width: 576px) {
+    .product-card {
+        min-width: 90vw;
+        max-width: 95vw;
+        margin: 0 auto 16px auto;
+        padding: 20px 10px;
+        height: auto;
+    
+    }
 }
 
 .carousel-control {

@@ -12725,7 +12725,7 @@ p.career-text {
 }
 
 .carousel-control-next {
-    right: 5px;
+    right: -60px;
 }
 
 .pagination-dots {

@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /private/
+Allow: /
+
+Sitemap: https://www.scstechindia.com/sitemap.xml

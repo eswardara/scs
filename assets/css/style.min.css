@@ -8735,7 +8735,7 @@ textarea.form-control {
     width: 100%;
     height: 730px;
     flex-shrink: 0;
-    background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1746701850/Group_1000002123_2_1_ganhlt.png');
+    background-image: url('../images/scsImages/Group_1000002123_2_1_ganhlt.png');
     background-size: cover;
     background-position: center;
     display: flex;
